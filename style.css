@@ -1,0 +1,215 @@
+/*header*/
+.menu {
+  list-style: none;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+}
+.menu li {
+  position: relative;
+}
+.menu a {
+  display: block;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.menu li:hover {
+  background-color: rgba(50, 50, 50, 0.5);
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgb(105, 105, 105);
+  list-style: none;
+  padding: 0;
+  top: 100%;
+  left: 0;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+.submenu li a {
+  padding: 10px;
+  width: 150px;
+}
+.topo {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./imagens/croche4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;   
+  color: white;                        
+}
+
+/*imagens*/
+img {
+  width: 100%;
+  height: 245px;
+  object-position: center;
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto;
+}
+
+/*titulo*/
+.titulo-principal {
+   text-align: center;
+   color: black;
+
+   /*paragrafos*/
+}
+.caixap1, .caixap2, .caixap3, .caixap4 {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./imagens/ursos.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: white; 
+}
+.caixap1 h2, .caixap2 h2, .caixap3 h2, .caixap4 h2  {
+  text-align: center;
+}
+
+/*listas*/
+.lista1, .lista2, .lista3 {
+  background-color: rgb(129, 58, 42);
+  padding: 20px;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.lista-1, .lista-2, .lista-3 {
+  list-style: none;
+  padding: 0;
+}
+.lista-1 li, .lista-2 li, .lista-3 li{
+  background-color: rgba(255, 255, 255, 0.568);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.lista-1 li::before, .lista-2 li::before, .lista-3 li::before {
+  content: "✩ ";
+}
+.lista1 h2, .lista2 h2, .lista3 h2 {
+  text-align: center;
+  color: white;
+}
+/*link*/
+a {
+  text-decoration: none;
+  color: black;
+}
+.lista1 li:hover a, .lista2 li:hover a, .lista3 li:hover a {
+  color: rgb(157, 55, 55);
+}
+
+     /*pagina pelucia*/
+/*fotos*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
+  width: 80%;
+  margin: 20px auto;
+}
+.galeria img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+/*video e audio*/
+.midia {
+  background-color: white;
+  padding: 20px;
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.midia video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.midia audio {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+}
+
+    /*formulario*/
+/*tabelas*/
+.tabela {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgba(157, 55, 55, 0.493);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.tabela th {
+  background-color:  rgb(157, 55, 55);;
+  color: white;
+  padding: 10px;
+}
+
+.tabela td {
+  padding: 10px;
+  text-align: center;
+}
+
+/*formulario*/
+.formulario {
+  width: 80%;
+  margin: 30px auto;
+}
+
+fieldset {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input, textarea {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+/*ancora*/
+.voltar {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  color: grey;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.voltar:hover {
+  color:black;
+}
